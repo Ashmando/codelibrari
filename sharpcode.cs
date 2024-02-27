@@ -7,7 +7,7 @@
             return type.GetConstructor(types);
         }
     }
-
+//yes
   public class ExpectedExceptionAttribute : NUnitAttribute, IWrapTestMethod
     {
         private readonly Type _expectedExceptionType;
