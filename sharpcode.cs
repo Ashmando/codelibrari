@@ -24,3 +24,8 @@
 
         private class ExpectedExceptionCommand : DelegatingTestCommand
         {
+  public ExpectedExceptionCommand(TestCommand innerCommand, Type expectedType)
+                : base(innerCommand)
+            {
+                _expectedType = expectedType;
+            }
